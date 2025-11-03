@@ -1,12 +1,12 @@
 window.addEventListener("click", function(event) {
     console.log("a click occurred on the window")
-    console.log("event.Target:", event.Target)
+    console.log("event.Target:", event.target)
     console.log("event.currentTarget:", event.currentTarget)
 })
 
 function handleButtonClick(event) {
     console.log("a button was clicked, event:", event)
-    console.log("event.Target:", event.Target)
+    console.log("event.Target:", event.target)
     console.log("event.currentTarget:", event.currentTarget)
     var button = event.target
     var box = button.parentNode
@@ -21,7 +21,7 @@ for (var i = 0; i <buttons.length; i++) {
 var boxContainer = document.getElementById("box-container")
 boxContainer.addEventListener("click", function (event) {
     console.log("the main element was click")
-    console.log("event.Target:", event.Target)
+    console.log("event.Target:", event.target)
     console.log("event.currentTarget:", event.currentTarget)
     event.stopPropagation()
 })
